@@ -30,7 +30,7 @@ SECRET_KEY = 'django-insecure-lhe2_l_4mhcs-4u@-j16*y8!q2d=08w5#-r07+4*&-4+!yhedc
 DEBUG = True
 
 ALLOWED_HOSTS = ['8000-itjosephk2-djangoblog-ku6egr2mqwk.ws.codeinstitute-ide.net',
-'joe-django-blog-30b0acc1b444.heroku.com']
+'joe-django-blog-30b0acc1b444.herokuapp.com']
 
 
 # Application definition
