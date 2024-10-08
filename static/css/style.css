@@ -90,6 +90,9 @@ body {
     transform: skew(15deg);
     z-index: 100;
 }
+.page-link-list-item {
+    margin: 0 20px!important;
+}
 
 .post-link {
     text-decoration: none;
