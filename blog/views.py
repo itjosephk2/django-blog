@@ -23,7 +23,13 @@ def post_detail(request, slug):
     """
 
     queryset = Post.objects.filter(status=1)
-    post = get_object_or_404(queryset, slug=slug)
+
+    try:
+        post = get_object_or_404(queryset, slug=slug)
+        print(post)  # Print the post object to the console
+    except Http404:
+        print(f"Post with slug '{slug}' does not exist.")  # Add this line to log the missing slug
+        raise  # Re-raise the exception to show the standard 404 page
 
     return render(
         request,
